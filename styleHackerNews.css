@@ -1,0 +1,125 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+  p {
+    color: black;
+    font-size: .75rem;
+    display: inline-block;
+  }
+
+  header {
+    background: rgb(255, 102, 2);
+    padding: .15rem;
+  }
+
+  section {
+    background: rgb(246,246,239);
+    margin: 5px auto 0;
+    width: 80%;
+  }
+
+  section ol {
+    margin: 3px 0 0 2rem;
+    color: rgb(137, 137, 137);
+    font-size: .75rem;
+  }
+
+  section li {
+    margin: .5rem 0;
+  }
+
+  #more {
+    margin: 1.1rem 0 0.9rem;
+  }
+
+  .right {
+      float: right;
+      margin-right: .25rem;
+      margin-top: 7px;
+    }
+.logo{
+  display: inline-block;
+}
+
+  footer {
+    border-top: 2px solid rgb(255, 102, 2);
+    text-align: center;
+  }
+
+  .small {
+    font-size: .7rem;
+  }
+  .smaller {
+    font-size: .7rem;
+  }
+  .gray {
+    color: rgb(137,137,137);
+    font-size: 15px;
+  }
+
+  #logo {
+    border: 1px solid white;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 2.5px;
+    margin-right: .3rem;
+    color: white;
+    font-weight: bold;
+
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  footer {
+    padding: 1.25rem;
+  }
+
+  footer nav {
+    margin: 1.25rem 0;
+  }
+  .low_gray {
+    text-decoration: none;
+    color: rgb(137, 137, 137);
+    font-size: .70rem;
+  }
+  .lower_gray{
+    color: rgb(137,137,137);
+    font-size: .67rem;
+    margin-left: 16px;
+  }
+  .lower_gray a{
+    text-decoration: none;
+    color:rgb(137, 137, 137);
+    font-size: .67rem;
+  }
+  .low_gray:hover,.lower_gray a:hover{
+    text-decoration: underline;
+  }
+  .tri_points {
+       margin-right: 1.5px;
+       color: rgb(153,153,153);
+       font-size: .75rem;
+       text-decoration: none;
+     }
+
+
+  .title-container p {
+    display: inline-block;
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
