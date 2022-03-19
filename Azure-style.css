@@ -1,5 +1,5 @@
 a{
-  color: black;
+  color: inherit;
   text-decoration: none;
 }
 a:hover{
@@ -38,6 +38,7 @@ body{
 }
 
 .co-19{
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,6 +55,7 @@ body{
 
 .nav_links,.freeA,.co-19{
   font-size: 13px;
+  color: black;
 }
 .fa{
   padding: 7px 8px 7px 8px;
@@ -155,19 +157,161 @@ padding-bottom: 20px;
 .sec1_para{
   text-align: center;
   font-size: 25px;
-  color: #000060;
+  color: #000;
+  font-weight: 500;
+}
+.section{
+  display:block;
+  padding: 60px 0;
+  width:100%;
+}
+.column.row.row,.row.row.columns{
+  float:none;
+
+}
+
+.text-center{
+  text-align:center;
+}
+
+
+.item_1{
+
+ grid-area: button_1;
+ display:flex;
+ flex-direction: column;
+ align-items: flex-start;
+ padding-left: 10px;
+}
+.item_2{
+ grid-area: button_2;
+
+}
+.item_3{
+ grid-area: button_3;
+}
+.item_2,.item_3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item_1,.item_2,.item_3{
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    transition-duration: 1s;
+}
+.item_1:hover,.item_2:hover,.item_3:hover{
+
+   box-shadow: 0 0 10px #C6C1BF;
+}
+.grid_container{
+  display: grid;
+  grid-template-areas:
+   'button_1   button_2'
+   'button_1  button_3';
+  grid-gap: 25px;
+  padding: 10px 30px 10px 30px;
+
+}
+.grid_container>div{
+  background-color: white;
+  font-size: 30px;
+  border-radius: 6px;
+}
+.logo_1 >img,.logo_2 > img,.logo_3 > img{
+  width: 150px;
+  height: auto;
+}
+
+.container_info1,.container_info2,.container_info3{
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.title_1,.title_2,.title_3{
+  color: #0062ad;
+  font-size: 20px;
+  font-weight:500;
+  transition-duration: 2s;
+}
+.title_1:hover, .title_2:hover, .title_3:hover{
+    color: #1A100B;
+}
+.mini_info_1,.mini_info_2 ,.mini_info_3{
+  font-size:16px ;
+  color: #4c4c51;
+  text-decoration: none;
+}
+.new_to_azure{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+}
+.new_to_azure > p{
+  padding-right: 25px;
   font-weight: 400;
 }
-.para{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  padding-top: 30px;
+.overviewbutton{
+    background-color: transparent;
+    border: 1px solid #0078d4;
+    border-radius: 4px;
+    color: #0062ad;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 16px;
+    transition-property: background-color;
+
 }
-.grid{
+
+.overviewbutton:hover{
+  background-color: #0078d4;
+  color: white;
+}
+.azure_products{
+  background-color: #f1f1f1;
+  color: black;
+}
+.aitem_1{
+  grid-area: list;
+  }
+.aitem_2{
+  grid-area: button_1;
+}
+.aitem_3{
+  grid-area: button_2;
+}
+.aitem_4{
+  grid-area: button_3;
+}
+.aitem_5{
+  grid-area: button_4;
+}
+.aitem_6{
+  grid-area: button_5;
+}
+.aitem_7{
+  grid-area: button_6;
+}
+.aitem_8{
+  grid-area: screenshot;
+}
+
+
+.grid_container2{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr ;
-  column-gap: 30px;
-  row-gap: 24px;
+  grid-template-areas:
+   'list button_1 button_2 button_3 screenshot'
+   'list button_4 button_5 button_6 screenshot';
+   grid-gap: 25px;
+   background-color: #2196F3;
+   padding: 10px;
+
+}
+.grid_container2 > div{
+ background-color: rgba(255, 255, 255, 0.8);
+ text-align: center;
 }
